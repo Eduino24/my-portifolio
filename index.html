@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Eduino Francisco. Desenvolvedor Full Stack & UI/UX Designer com projetos modernos, habilidades e formas de contato.">
+    <meta name="description" content="Portfólio Profissional de Eduino Francisco. Desenvolvedor Full Stack & UI/UX Designer focado na Arquitetura SDD (Software Design Document).">
     <meta name="author" content="Eduino Francisco">
-    <meta name="keywords" content="Portfólio, Desenvolvedor, Web Developer, Full Stack, JavaScript, HTML, CSS, SSD Architecture">
+    <meta name="keywords" content="Eduino Francisco, Portfólio, Desenvolvedor Full Stack, Modelo SDD, Software Design Document, HTML, CSS, JavaScript">
     
-    <title>Eduino Francisco | Portfólio Profissional</title>
+    <title>Eduino Francisco | Portfólio Profissional (Modelo SDD)</title>
 
     <!-- FontAwesome Icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- NAV HEADER -->
+    <!-- NAV HEADER MULTI-PÁGINA -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <a href="#hero" class="logo">
+            <a href="index.html" class="logo">
                 <div class="logo-badge">EF</div>
-                <span>Portfólio<span style="color:var(--accent-secondary);">.</span></span>
+                <span>Eduino Francisco</span>
             </a>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#hero" class="nav-link active">Início</a></li>
-                <li><a href="#about" class="nav-link">Sobre Mim</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="nav-link">Projetos</a></li>
-                <li><a href="#contact" class="nav-link">Contato</a></li>
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+                <li><a href="projetos.html" class="nav-link">Projetos (SDD)</a></li>
+                <li><a href="habilidades.html" class="nav-link">Habilidades</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -49,22 +49,19 @@
 
         <!-- HERO SECTION -->
         <section class="hero" id="hero">
-            <div class="hero-glow-1"></div>
-            <div class="hero-glow-2"></div>
-
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <div class="ssd-badge-bar">
-                        <span class="ssd-indicator"></span>
-                        <span>Arquitetura SSD (Single Source of Data)</span>
+                    <div class="sdd-badge-bar">
+                        <span class="sdd-indicator"></span>
+                        <span>Arquitetura SDD (Software Design Document)</span>
                     </div>
 
                     <h1 class="hero-title" id="hero-title">
-                        Carregando...
+                        Olá, eu sou <br><span class="gradient-text">Eduino Francisco</span>
                     </h1>
 
                     <p class="hero-bio" id="hero-bio">
-                        Carregando informações do perfil...
+                        Desenvolvedor de software focado no modelo SDD (Software Design Document). Crio sistemas web robustos, escaláveis e eficientes com arquitetura limpa e código sustentável.
                     </p>
 
                     <div style="margin-bottom:1.5rem; color:var(--text-muted); font-size:0.95rem;" id="hero-location">
@@ -72,50 +69,69 @@
                     </div>
 
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-project-diagram"></i> Ver Projetos
+                        <a href="projetos.html" class="btn btn-primary">
+                            <i class="fas fa-diagram-project"></i> Explorar Projetos SDD
                         </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="far fa-paper-plane"></i> Contactar-me
+                        <a href="contacto.html" class="btn btn-outline">
+                            <i class="far fa-paper-plane"></i> Entrar em Contacto
                         </a>
                     </div>
 
                     <div class="hero-socials" id="hero-socials">
-                        <!-- Renderizado via JS a partir do SSD -->
+                        <!-- Renderizado via JS -->
                     </div>
                 </div>
 
                 <div class="hero-avatar-wrapper">
                     <div class="hero-avatar-card">
-                        <img id="hero-avatar" src="" alt="Foto de Perfil">
-                    </div>
-
-                    <div class="floating-card floating-card-1">
-                        <i class="fas fa-code"></i>
-                        <div>
-                            <div style="font-size:0.75rem; color:var(--text-muted);">Especialidade</div>
-                            <div>Desenvolvimento Web</div>
-                        </div>
-                    </div>
-
-                    <div class="floating-card floating-card-2">
-                        <i class="fas fa-bolt"></i>
-                        <div>
-                            <div style="font-size:0.75rem; color:var(--text-muted);">Status</div>
-                            <div>Código Limpo & SSD</div>
+                        <img id="hero-avatar" src="assets/images/Eduino.jpg" alt="Foto de Perfil de Eduino Francisco">
+                        <div class="hero-avatar-footer">
+                            <h3>Eduino Francisco</h3>
+                            <p>Full Stack & SDD Architect</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ABOUT & STATS SECTION -->
-        <section class="section" id="about">
+        <!-- DESTAQUES DA ARQUITETURA SDD -->
+        <section class="section" style="background:var(--bg-secondary);">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag"><i class="fas fa-user-circle"></i> Perfil</span>
-                    <h2 class="section-title">Sobre <span>Mim</span></h2>
-                    <p class="section-subtitle">Conheça um pouco da minha trajetória profissional e métricas de desempenho.</p>
+                    <span class="section-tag"><i class="fas fa-cubes"></i> Metodologia</span>
+                    <h2 class="section-title">Engenharia Orientada ao <span>Modelo SDD</span></h2>
+                    <p class="section-subtitle">O desenvolvimento orientado a Software Design Document (SDD) garante clareza técnica, redução de erros e facilidade de manutenção em projetos de grande escala.</p>
+                </div>
+
+                <div class="sdd-features-grid">
+                    <div class="sdd-feature-card">
+                        <div class="sdd-feature-icon"><i class="fas fa-file-code"></i></div>
+                        <h3>Especificação Estruturada</h3>
+                        <p>Cada módulo é documentado minuciosamente antes da codificação, assegurando clareza nos requisitos funcionais e não-funcionais.</p>
+                    </div>
+
+                    <div class="sdd-feature-card">
+                        <div class="sdd-feature-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Arquitetura Limpa & Modular</h3>
+                        <p>Código limpo, organizado em camadas independentes de componentes, facilitando escalabilidade e testes automatizados.</p>
+                    </div>
+
+                    <div class="sdd-feature-card">
+                        <div class="sdd-feature-icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Manutenibilidade & Qualidade</h3>
+                        <p>Redução drástica de débitos técnicos e facilidade de onboarding para novas equipas de engenharia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTATÍSTICAS E MÉTRICAS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-chart-line"></i> Desempenho</span>
+                    <h2 class="section-title">Métricas de <span>Resultados</span></h2>
+                    <p class="section-subtitle">Resultados práticos obtidos em projetos desenvolvidos sob padrões modernos.</p>
                 </div>
 
                 <div class="stats-grid" id="stats-grid">
@@ -124,78 +140,35 @@
             </div>
         </section>
 
-        <!-- SKILLS SECTION -->
-        <section class="section" id="skills">
+        <!-- PREVIEW DE PROJETOS SDD -->
+        <section class="section" style="background:var(--bg-secondary);">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag"><i class="fas fa-laptop-code"></i> Competências</span>
-                    <h2 class="section-title">Minhas <span>Habilidades</span></h2>
-                    <p class="section-subtitle">Tecnologias e ferramentas que utilizo no dia a dia para desenvolver soluções de alto nível.</p>
-                </div>
-
-                <div class="skills-grid" id="skills-grid">
-                    <!-- Renderizado dinamicamente do data.js -->
-                </div>
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section class="section" id="projects">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag"><i class="fas fa-briefcase"></i> Portfólio</span>
-                    <h2 class="section-title">Projetos em que <span>Participei</span></h2>
-                    <p class="section-subtitle">Explore alguns dos principais projetos web, aplicativos móveis e ferramentas desenvolvidas.</p>
-                </div>
-
-                <div class="portfolio-filters" id="portfolio-filters">
-                    <!-- Filtros renderizados via JS -->
+                    <span class="section-tag"><i class="fas fa-laptop-code"></i> Destaques</span>
+                    <h2 class="section-title">Projetos em <span>Destaque</span></h2>
+                    <p class="section-subtitle">Conheça alguns dos principais sistemas desenvolvidos com a especificação SDD.</p>
                 </div>
 
                 <div class="projects-grid" id="projects-grid">
                     <!-- Cards de projetos renderizados dinamicamente via JS -->
                 </div>
+
+                <div style="text-align:center; margin-top:3rem;">
+                    <a href="projetos.html" class="btn btn-outline">
+                        Ver Todos os Projetos SDD <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
-        <section class="section" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Comunicação</span>
-                    <h2 class="section-title">Como me <span>Contactar</span></h2>
-                    <p class="section-subtitle">Sinta-se à vontade para enviar uma mensagem ou entrar em contato direto pelas redes sociais.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-info-list" id="contact-info-list">
-                        <!-- Informações de contato do SSD -->
-                    </div>
-
-                    <div class="contact-form-container">
-                        <h3 style="font-size:1.4rem; font-weight:700; margin-bottom:1.5rem;">Enviar Mensagem Direta</h3>
-                        
-                        <form id="contact-form">
-                            <div class="form-group">
-                                <label for="form-name" class="form-label">Seu Nome Completo</label>
-                                <input type="text" id="form-name" class="form-control" placeholder="Ex: Maria Silva" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="form-email" class="form-label">Seu Endereço de E-mail</label>
-                                <input type="email" id="form-email" class="form-control" placeholder="maria@exemplo.com" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="form-message" class="form-label">Mensagem / Proposta</label>
-                                <textarea id="form-message" class="form-control" placeholder="Escreva a sua mensagem aqui..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" style="width:100%;">
-                                <i class="fas fa-paper-plane"></i> Enviar Mensagem
-                            </button>
-                        </form>
-                    </div>
+        <!-- CALL TO ACTION BANNER -->
+        <section class="section" style="text-align:center;">
+            <div class="container" style="max-width:800px;">
+                <h2 style="font-size:2.2rem; font-weight:800; margin-bottom:1rem;">Pronto para transformar sua ideia em um projeto SDD de alta qualidade?</h2>
+                <p style="color:var(--text-muted); font-size:1.1rem; margin-bottom:2rem;">Entre em contacto direto para discutirmos especificações técnicas, arquitetura de software e orçamento para o seu próximo sistema.</p>
+                <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+                    <a href="contacto.html" class="btn btn-primary"><i class="far fa-paper-plane"></i> Falar com Eduino Francisco</a>
+                    <a href="sobre.html" class="btn btn-outline"><i class="fas fa-user-circle"></i> Conhecer Perfil Completo</a>
                 </div>
             </div>
         </section>
@@ -209,11 +182,18 @@
                 <div class="logo-badge">EF</div>
                 <span>Eduino Francisco</span>
             </div>
-            <p>© <span id="current-year">2026</span> Eduino Francisco. Todos os direitos reservados. Desenvolvido com Técnica SSD (HTML5, CSS3, JavaScript).</p>
+            <p>© <span id="current-year">2026</span> Eduino Francisco. Todos os direitos reservados. Arquitetura SDD (Software Design Document).</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos SDD</a></li>
+                <li><a href="habilidades.html">Habilidades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
     </footer>
 
-    <!-- MODAL DE PROJETO -->
+    <!-- MODAL DE PROJETO SDD -->
     <div class="modal-overlay" id="project-modal">
         <div class="modal-card" id="modal-card-content">
             <!-- Conteúdo carregado dinamicamente via JS -->
@@ -221,11 +201,8 @@
     </div>
 
     <!-- CARREGAMENTO DOS SCRIPTS -->
-    <!-- 1. Fonte Única de Dados (SSD) -->
     <script src="js/data.js"></script>
-    <!-- 2. Aplicação Principal -->
     <script src="js/app.js"></script>
-
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>

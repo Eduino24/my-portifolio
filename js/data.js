@@ -1,10 +1,9 @@
 /**
- * TÉCNICA SSD - SINGLE SOURCE OF DATA (Fonte Única de Dados)
+ * MODELO SDD - SOFTWARE DESIGN DOCUMENT / SYSTEM DRIVEN DESIGN
  * 
- * Este arquivo é a ÚNICA fonte de dados do seu portfólio.
+ * Este arquivo é a fonte central de dados estruturados do portfólio.
  * Todas as informações como dados pessoais, contatos, habilidades e projetos
- * estão centralizadas aqui. Para atualizar qualquer conteúdo no site,
- * basta modificar as propriedades deste objeto!
+ * estão centralizadas e organizadas sob a arquitetura SDD.
  */
 
 const portfolioData = {
@@ -12,17 +11,20 @@ const portfolioData = {
     personal: {
         name: "Eduino Francisco",
         title: "Desenvolvedor Full Stack & UI/UX Designer",
-        bio: "Desenvolvedor apaixonado por criar experiências digitais modernas, eficientes e escaláveis. Especializado no desenvolvimento de aplicações web intuitivas com design elegante e código limpo.",
-        location: "Luanda, Angola",
-        email: "eduino.francisco@exemplo.com",
-        phone: "+244 923 000 000",
-        whatsapp: "244923000000",
-        avatar: "assets/images/profile.png",
-        availability: "Disponível para novos projetos e freelancers",
+        bio: "Desenvolvedor de software focado no modelo SDD (Software Design Document). Crio sistemas web robustos, escaláveis e eficientes com arquitetura limpa, código sustentável e interfaces humanas intuitivas.",
+        location: "Benguela, Angola",
+        email: "eduinocacuata@gmail.com",
+        phone: "940690728",
+        phoneFormatted: "+244 940 690 728",
+        whatsapp: "244940690728",
+        avatar: "assets/images/Eduino.jpg",
+        availability: "Disponível para novos projetos, consultoria e freelancers",
+        sddOverview: "Modelo SDD (Software Design Document): Estrutura de desenvolvimento orientada a especificações rigorosas, arquitetura limpa e documentação técnica precisa.",
         stats: [
             { label: "Anos de Experiência", value: "3+" },
-            { label: "Projetos Concluídos", value: "15+" },
-            { label: "Clientes Satisfeitos", value: "10+" }
+            { label: "Projetos SDD Concluídos", value: "15+" },
+            { label: "Sistemas em Produção", value: "10+" },
+            { label: "Taxa de Satisfação", value: "100%" }
         ]
     },
 
@@ -31,67 +33,69 @@ const portfolioData = {
         {
             name: "GitHub",
             icon: "fab fa-github",
-            url: "https://github me",
-            description: "Confira meus repositórios e código fonte"
+            url: "https://github.com",
+            description: "Repositórios com arquitetura SDD e projetos Open Source"
         },
         {
             name: "LinkedIn",
             icon: "fab fa-linkedin-in",
             url: "https://linkedin.com",
-            description: "Conecte-se profissionalmente"
+            description: "Conexões profissionais e histórico de carreira"
         },
         {
             name: "WhatsApp",
             icon: "fab fa-whatsapp",
-            url: "https://wa.me/244923000000",
-            description: "Envie uma mensagem direta"
+            url: "https://wa.me/244940690728",
+            description: "Contacto rápido via WhatsApp: 940690728"
         },
         {
             name: "Email",
             icon: "far fa-envelope",
-            url: "mailto:eduino.francisco@exemplo.com",
-            description: "Respondo em até 24 horas"
+            url: "mailto:eduinocacuata@gmail.com",
+            description: "Envie um e-mail direto para eduinocacuata@gmail.com"
         }
     ],
 
     // 3. HABILIDADES TÉCNICAS (SKILLS)
     skills: [
-        { name: "HTML5 / CSS3", category: "Frontend", level: 95, icon: "fab fa-html5" },
-        { name: "JavaScript (ES6+)", category: "Frontend", level: 90, icon: "fab fa-js" },
-        { name: "React / Next.js", category: "Frontend", level: 85, icon: "fab fa-react" },
-        { name: "Node.js", category: "Backend", level: 80, icon: "fab fa-node-js" },
-        { name: "Python", category: "Backend", level: 75, icon: "fab fa-python" },
-        { name: "SQL & NoSQL", category: "Database", level: 80, icon: "fas fa-database" },
-        { name: "Git & GitHub", category: "Ferramentas", level: 88, icon: "fab fa-git-alt" },
-        { name: "UI/UX & Figma", category: "Design", level: 85, icon: "fab fa-figma" }
+        { name: "HTML5 / CSS3 Avançado", category: "Frontend", level: 95, icon: "fab fa-html5", desc: "Layouts semânticos, acessíveis e responsivos" },
+        { name: "JavaScript (ES6+ / TypeScript)", category: "Frontend", level: 90, icon: "fab fa-js", desc: "Desenvolvimento modular, assíncrono e moderno" },
+        { name: "React & Next.js", category: "Frontend", level: 85, icon: "fab fa-react", desc: "Aplicações de alto desempenho e arquitetura por componentes" },
+        { name: "Node.js & Express", category: "Backend", level: 82, icon: "fab fa-node-js", desc: "Construção de APIs RESTful e arquitetura baseada em eventos" },
+        { name: "Python & Django/FastAPI", category: "Backend", level: 78, icon: "fab fa-python", desc: "Automação, scripts e serviços de backend escaláveis" },
+        { name: "Bancos de Dados (SQL & NoSQL)", category: "Database", level: 80, icon: "fas fa-database", desc: "Modelagem relacional, otimização de queries e relatórios" },
+        { name: "Engenharia de Software (SDD)", category: "Arquitetura", level: 88, icon: "fas fa-sitemap", desc: "Especificação de requisitos, casos de uso e documentos SDD" },
+        { name: "Git, GitHub & CI/CD", category: "Ferramentas", level: 88, icon: "fab fa-git-alt", desc: "Controle de versão rigoroso e automação de builds" },
+        { name: "UI/UX & Design Systems", category: "Design", level: 85, icon: "fab fa-figma", desc: "Prototipagem realista, acessibilidade e componentes reutilizáveis" }
     ],
 
     // 4. CATEGORIAS DE PROJETOS PARA FILTRO
     projectCategories: [
-        { id: "todos", label: "Todos" },
-        { id: "web", label: "Web Apps" },
-        { id: "mobile", label: "Mobile" },
-        { id: "ai", label: "IA & Ferramentas" }
+        { id: "todos", label: "Todos os Projetos" },
+        { id: "web", label: "Web Applications" },
+        { id: "mobile", label: "Mobile Apps" },
+        { id: "sdd", label: "Arquitetura SDD" }
     ],
 
-    // 5. PROJETOS EM QUE JÁ PARTICIPOU
+    // 5. PROJETOS COM ESPECIFICAÇÃO SDD
     projects: [
         {
             id: 1,
-            title: "Painel Analítico de Vendas (Dashboard)",
+            title: "Sistema Analítico de Vendas & Gestão",
             category: "web",
             categoryLabel: "Web App",
-            shortDescription: "Plataforma de gestão analítica em tempo real com gráficos interativos e relatórios.",
-            fullDescription: "Desenvolvimento de um dashboard administrativo completo para monitoramento de vendas, métricas de clientes e relatórios financeiros em tempo real. Implementado com métricas visuais avançadas e modo escuro nativo.",
+            shortDescription: "Plataforma empresarial de gestão analítica com gráficos em tempo real e arquitetura SDD.",
+            fullDescription: "Desenvolvimento de um sistema completo de gestão de vendas e indicadores comerciais. O projeto seguiu rigorosamente o modelo SDD (Software Design Document), garantindo modularidade, facilidade de manutenção e segurança nos dados.",
             image: "assets/images/project1.png",
-            tags: ["HTML5", "CSS3", "JavaScript", "Chart.js"],
+            tags: ["Modelo SDD", "JavaScript", "Chart.js", "REST API"],
             featured: true,
             demoUrl: "#",
             githubUrl: "#",
+            sddDocUrl: "#",
             details: [
-                "Interface responsiva com suporte a Dark/Light Mode",
-                "Gráficos dinâmicos de desempenho e conversão",
-                "Exportação de relatórios em PDF e Excel"
+                "Documentação SDD completa incluindo diagramas de fluxo de dados",
+                "Interface limpa e profissional com suporte nativo a Dark/Light Mode",
+                "Gráficos dinâmicos de desempenho comercial e relatórios exportáveis"
             ]
         },
         {
@@ -99,35 +103,37 @@ const portfolioData = {
             title: "Aplicação Mobile de E-Commerce",
             category: "mobile",
             categoryLabel: "Mobile",
-            shortDescription: "Interface intuitiva para loja virtual com carrinho dinâmico e fluxo de checkout.",
-            fullDescription: "Aplicativo móvel focado em proporcionar uma experiência de compra ágil e moderna. Possui catálogo categorizado, busca em tempo real, carrinho de compras sincronizado e integração de pagamentos.",
+            shortDescription: "Interface nativa otimizada para compras com catálogo interativo e fluxo checkout intuitivo.",
+            fullDescription: "Aplicativo móvel focado em proporcionar uma experiência de compra ágil, limpa e segura. O fluxo do utilizador foi especificado previamente no documento SDD antes da implementação do código.",
             image: "assets/images/project2.png",
-            tags: ["JavaScript", "UI/UX", "CSS Grid", "Mobile First"],
+            tags: ["JavaScript", "UI/UX Realista", "Mobile First", "Modelo SDD"],
             featured: true,
             demoUrl: "#",
             githubUrl: "#",
+            sddDocUrl: "#",
             details: [
-                "Navegação otimizada para dispositivos móveis",
-                "Carrinho interativo com cálculo automático de total",
-                "Filtro rápido por categorias de produtos"
+                "Arquitetura focada na otimização de performance mobile",
+                "Carrinho de compras interativo com validação dinâmica",
+                "Integração de pagamentos com tratamento transparente de erros"
             ]
         },
         {
             id: 3,
-            title: "Plataforma de Assistência com IA",
-            category: "ai",
-            categoryLabel: "IA & Ferramentas",
-            shortDescription: "Ferramenta interativa de geração de conteúdo e análise com inteligência artificial.",
-            fullDescription: "Sistema SaaS Web moderno para geração automatizada de textos, sugestões de código e automação de atendimento. Utiliza design glassmorphism com micro-animações elegantes.",
+            title: "Plataforma de Especificação & Gestão SDD",
+            category: "sdd",
+            categoryLabel: "Arquitetura SDD",
+            shortDescription: "Ferramenta para criação, validação e manutenção de documentos de Software Design (SDD).",
+            fullDescription: "Sistema construído especificamente para gerir o ciclo de vida de especificações de software. Permite a desenvolvedores e gestores estruturar módulos, diagramas de sequência e especificações de API segundo o modelo SDD.",
             image: "assets/images/project3.png",
-            tags: ["JavaScript", "CSS Glassmorphism", "REST API", "AI Integration"],
+            tags: ["Modelo SDD", "Engenharia de Software", "JavaScript", "Arquitetura Limpa"],
             featured: true,
             demoUrl: "#",
             githubUrl: "#",
+            sddDocUrl: "#",
             details: [
-                "Integração com APIs de Modelos de Linguagem",
-                "Histórico de conversas salvo localmente",
-                "Tema futurista com alto contraste e acessibilidade"
+                "Modelagem de requisitos funcionais e não-funcionais",
+                "Exportação de documentos SDD em formato padronizado",
+                "Visualização realista de diagramas de arquitetura de software"
             ]
         }
     ]
